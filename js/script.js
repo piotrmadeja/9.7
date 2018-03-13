@@ -1,16 +1,3 @@
-var newGameBtn = document.getElementById('js-newGameButton');
-
-newGameBtn.addEventListener('click', newGame);
-
-var pickRock = document.getElementById('js-playerPick_rock'),
-pickPaper = document.getElementById('js-playerPick_paper'),
-pickScissors = document.getElementById('js-playerPick_scissors');
-
-pickRock.addEventListener('click', function() { playerPick('ROCK') });
-pickPaper.addEventListener('click', function() { playerPick('PAPER') });
-pickScissors.addEventListener('click', function() { playerPick('SCISSORS') });
-
-
 var gameState = 'notStarted',  
 player = {
     name: '',
@@ -144,4 +131,16 @@ function winnerOfTheGame () {
   }
   setGameElements();
 }
+
+var newGameBtn = document.getElementById('js-newGameButton');
+
+newGameBtn.addEventListener('click', newGame);
+
+var pickRock = document.getElementById('js-playerPick_rock'),
+pickPaper = document.getElementById('js-playerPick_paper'),
+pickScissors = document.getElementById('js-playerPick_scissors');
+
+pickRock.addEventListener('click', function() { playerPick('ROCK') });
+pickPaper.addEventListener('click', function() { playerPick('PAPER') });
+pickScissors.addEventListener('click', function() { playerPick('SCISSORS') });
 

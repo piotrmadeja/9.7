@@ -144,3 +144,4 @@ pickRock.addEventListener('click', function() { playerPick('ROCK') });
 pickPaper.addEventListener('click', function() { playerPick('PAPER') });
 pickScissors.addEventListener('click', function() { playerPick('SCISSORS') });
 
+
